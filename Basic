@@ -1,0 +1,90 @@
+C언어의 종류 : C, C++, C#
+자료형 - int(정수), float(실수), string(문자열), bool(참, 거짓)
+            변수 선언 방법 : 자료형 변수명 = 값;
+            비교 연산자 : >, <, >=, <=, ==, !=
+            논리 연산자 : &&(and), ||(or), !(NOT)
+            증감 연산자 : ++, --
+            산술 연산자 : + - * / %
+
+            출력문
+            Console.Write() = 괄호 안에 적은 문자열을 화면에 표시
+            Console.WriteLine() = 괄호 안에 적은 문자열을 화면에 표시하고 줄 바꿈
+
+            조건문 : (if elseif else), (switch case default)
+            if(A값 (비교연산자) B값)
+            {
+                문장; 
+            }
+
+            switch (A값)
+            {
+                case B값: 
+                문장;
+                break;
+            }
+
+            반복문 : for, while, foreach
+            for (초기값; 조건; 증감)
+            {
+                문장
+            }
+            초기값: num = 0;, 초기 선언값: int num = 0;
+
+            while(조건: num < 10)
+            {
+                증감 : num++;
+                문장 : 실행부분
+                증감 : num++;
+            }
+
+            foreach(자료형 이름(반복변수) in 자료구조)
+            {
+                문장;
+            } 
+제어문 : continue, break, return
+
+              namespace, class, func(함수, 메소드)
+              클래스 선언방법: 클래스이름 이름 = new 클래스이름();
+              클래스 접근방법: 클래스이름.함수이름(); // .: 접근자
+              한정자 반환자료형(void) 함수명(자료형1 변수1, 자료형2 변수2)
+
+              함수 호출 방법: 함수명(인자값1, 인자값2 ---);
+              한정자: public, private, protected, (internal)
+
+              랜덤 쓰는 방법 : Random rand = new Random();
+
+              자료구조: Array, List, Dictionary, Hashtable, Stack, Queue
+              주의 해야 할점: index 가 무조건 0부터 시작, 내가 만든 갯수 -1 까지 참조 가능
+
+              배열 선언방법 : 자료형[] 이름 = new 자료형[갯수];
+              배열 사용방법 : 자료형이름[0 ~갯수 - 1] = 자료형의값;
+              배열 참조방법 : study[4] = 10;
+
+             리스트 선언방법 : List<자료형> 이름 = new List<자료형>();
+             리스트 사용방법 : 자료형이름.Add(자료형의 값);
+
+             Dictionary<키(자료형), 값(자료형)> 이름 = new Dictionary<키(자료형), 값(자료형)>();
+
+             Hashtable 이름 = new Hashtable();
+
+             Stack<자료형> 이름 = new Stack<자료형>();
+             Stack<int> stackInt = new Stack<int>();
+             stackInt.Push(넣고자 하는 변수);
+             stackInt.Pop();
+
+             Push : 밀다(데이터를 넣는다.)
+             Pop : 나오다(데이터를 빼다.)
+
+             Queue<자료형> 이름 = new Queue<자료형>();
+             Queue<int> quInt = new Queue<int>();
+             quInt.Enqueue(넣고자 하는 변수);
+             quInt.Dequeue();
+
+             자료형이름.Remove : 내가 넣엇던 값을 찾아 삭제한다.
+             자료형이름.RemoveAt : index 참조값에 의해 삭제한다.
+             자료형이름.RemoveRange : 첫번째값은 시작 참조index, 두번째값 갯수 의해 삭제
+             자료구조 길이값 구하는 방법 : 1)배열 -> 이름.Length(갯수) 2) 이름.Count(갯수)
+
+             대입
+             1) a = a + 10;
+             2) a += 10; 
